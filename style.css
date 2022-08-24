@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: "gothic";
+    src: url("./fonts/gothic.ttf");
+}
+
+@font-face {
+    font-family: "butler";
+    src: url("./fonts/Butler_Light_Stencil.otf");
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'poppins', sans-serif;
+}
+
+a {
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+}
+
+section {
+    margin: auto;
+}
+
+h3 {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 30px !important;
+    font-family: "gothic", sans-serif;
+}
+
+
+input {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Header styles */
+
+header {
+    height: 100%;
+    background: url("/images/hero-image.png") no-repeat top;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 50px;
+}
+
+.upstate-logo {
+    width: 288px;
+    height: 81px;
+}
+
+header nav {
+    margin-top: 16px;
+}
+
+header nav a {
+    font-weight: 700;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: "butler", sans-serif;
+}
+
+header .menu-icon {
+    display: none;
+    width: 23px;
+    height: 16px;
+    margin-top: 16px;
+}
+
+header .close-icon {
+    z-index: 9;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+header nav a:first-child {
+    margin-right: 30px;
+}
+
+/* Responsive Header styles */
+@media screen and (max-width: 900px) {
+    header nav a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    header {
+        /* padding-top: 20px; */
+        padding: 20px 20px;
+        /* position: relative; */
+    }
+
+    .upstate-logo {
+        width: 200px;
+    }
+
+    header nav {
+        margin-top: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav a {
+        font-weight: normal;
+        text-decoration: underline;
+        padding: 10px;
+        margin: 0 !important;
+    }
+
+    header .menu-icon {
+        display: block;
+        margin-top: 25px;
+    }
+}
+
+/* Description Section */
+
+.description-section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    max-width: 900px;
+    line-height: 41px;
+    /* padding: 0 30px; */
+}
+
+.description-section p {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/* Responsive description section styles */
+@media screen and (max-width: 1000px) {
+    .description-section {
+        max-width: calc(100% - 60px);
+        text-align: center;
+        line-height: 28px;
+    }
+}
+
+/* Apply Now Section */
+.apply-section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    /* max-width: 1100px; */
+}
+
+.apply-section h3 {
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.apply-section .note {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.apply-section .note h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: "gothic", sans-serif;
+}
+
+.apply-section .note ul {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+}
+
+.apply-section .upload-images {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.apply-section .upload-images .pose-image-container {
+    height: 335px;
+    min-width: 275px;
+}
+
+.misc-container {
+    border: 1px solid #757575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pose-image-container img {
+    height: 100%;
+}
+
+.apply-section .upload-images .pose-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.apply-section .upload-images h6 {
+    font-size: 24px;
+    font-weight: 400;
+    /* padding: 15px; */
+}
+
+.apply-section .upload-images label {
+    font-weight: 700;
+    font-size: 22px;
+    border: 1px solid #D9D9D9;
+    padding: 10px 20px;
+    font-family: "gothic", sans-serif;
+}
+
+/* Responsive description section styles */
+@media screen and (max-width: 1250px) {
+    .apply-section {
+        max-width: calc(100% - 60px);
+    }
+
+    .apply-section .note {
+        max-width: calc(100% - 30px);
+    }
+
+    .apply-section .note h4 {
+        font-size: 20px;
+    }
+
+    .apply-section .note ul {
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+
+/* Contact Info Section */
+.contact-info-section {
+    max-width: 870px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.contact-info-section div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-section div input {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.social-media-section div input::placeholder,
+.contact-info-section div input::placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Responsive Contact info section styles */
+@media screen and (max-width: 1000px) {
+    .contact-info-section {
+        max-width: calc(100% - 60px);
+    }
+
+    .contact-info-section h3 {
+        font-size: 26px;
+    }
+
+    .contact-info-section div {
+        align-items: center;
+    }
+
+    .contact-info-section div input {
+        width: 100%;
+    }
+}
+
+/* Social Media Section */
+.social-media-section {
+    max-width: 870px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.social-media-section div {
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+    min-height: 60px;
+    padding: 0 20px;
+    border: 1px solid #D9D9D9;
+}
+
+.social-media-section div input {
+    border: none;
+    opacity: 0.5;
+}
+
+.social-media-section div input:nth-child(2) {
+    width: 80%;
+}
+
+.social-media-section div input:nth-child(3) {
+    width: 20%;
+    padding-left: 20px;
+    border-left: 1px solid #D9D9D9;
+}
+
+.social-media-section div .instagram-logo {
+    height: 32px;
+    width: 32px;
+    margin: auto;
+}
+
+.submit-application-btn {
+    padding: 10px 35px;
+    border: 1px solid #D9D9D9;
+    background: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    width: 290px;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    font-family: "gothic", sans-serif;
+}
+
+/* Responsive Social Media section styles */
+@media screen and (max-width: 1000px) {
+    .social-media-section {
+        max-width: calc(100% - 60px);
+    }
+
+    .social-media-section h3 {
+        font-size: 26px;
+    }
+
+    .social-media-section div input:nth-child(2) {
+        width: 50%;
+    }
+
+    .social-media-section div input:nth-child(3) {
+        width: 50%;
+    }
+}
+
+footer {
+    max-width: 1100px;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+}
+
+footer div li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer div li:nth-child(2),
+footer div li:nth-child(3) {
+    border-left: 1px solid #000;
+}
+
+@media screen and (max-width:760px) {
+    footer {
+        margin-top: 0;
+    }
+}

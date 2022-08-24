@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upstate Modeling</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+            <img src="./images/upstate-logo-white.svg" class="upstate-logo" alt="Logo" />
+        <nav>
+            <a href="#">Become a model</a>
+            <a href="#">Contact</a>
+        </nav>
+        <img src="./images/menu-icon.svg" class="menu-icon" id="menu-icon">
+        <img src="./images/close-icon.svg" class="close-icon" id="close-icon">
+    </header>
+
+    <section class="description-section">
+        <p>Our focus at Upstate modeling is to bring undiscovered beauty to the modeling world. There are a vast number
+            of modeling scouts in New York City looking for new models. But who's going to find the undiscovered beauty
+            in the smaller towns and cities? We're here to fill that void, get you discovered, and start your modeling
+            career.
+        </p>
+        <p>There are no costs on your end. Our fee is 10% if we partner you with another agencyor 20% if we sign you
+            with a direct client.
+        </p>
+        <p>The biggest mistake undiscovered models make is thinking they need a professional photos. With today’s mobile
+            phone picture quality, it’s easy to take good modeling pictures. You can take photos with your cell phone
+            timer, have a friend take them, or use a remote tripod like seen here </p>
+    </section>
+
+    <section class="apply-section">
+        <h3>Apply Now</h3>
+        <div class="note">
+            <h4>Please note the following:</h4>
+            <ul>
+                <li>Follow the poses shown in the photos below in good lighting.</li>
+                <li>Wear form fitting cloths.</li>
+                <li>No makeup or very limited natural makeup.</li>
+                <li>Upstate Modeling will never ask for nude or lingerie photos.</li>
+            </ul>
+        </div>
+        <div class="upload-images">
+            <div class="pose-image">
+                <h6>Close Up</h6>
+                <div class="pose-image-container">
+                    <img src="./images/Head-Shot.png" />
+                </div>
+                <label class="upload-btn" for="closeup-img">Upload Photo</label>
+                <input type="file" id="closeup-img" class="hidden">
+            </div>
+            <div class="pose-image">
+                <div class="pose-image">
+                    <h6>Profile</h6>
+                    <div class="pose-image-container">
+                        <img src="./images/Profile.png" />
+                    </div>
+                    <label class="upload-btn" for="profile-img">Upload Photo</label>
+                    <input type="file" id="profile-img" class="hidden">
+                </div>
+            </div>
+            <div class="pose-image">
+                <div class="pose-image">
+                    <h6>Knee Up (3/4)</h6>
+                    <div class="pose-image-container">
+                        <img src="./images/Knee-Up.png" />
+                    </div>
+                    <label class="upload-btn" for="kneeup-img">Upload Photo</label>
+                    <input type="file" id="kneeup-img" class="hidden">
+                </div>
+            </div>
+            <div class="pose-image">
+                <div class="pose-image">
+                    <h6>Full Length</h6>
+                    <div class="pose-image-container">
+                        <img src="./images/Full-Length.png" />
+                    </div>
+                    <label class="upload-btn" for="fulllength-img">Upload Photo</label>
+                    <input type="file" id="fulllength-img" class="hidden">
+                </div>
+            </div>
+            <div class="pose-image">
+                <div class="pose-image">
+                    <h6>&nbsp;</h6>
+                    <div class="pose-image-container misc-container">
+                        <p>Miscellaneous</p>
+                        <p>(Optional)</p>
+                    </div>
+                    <img src="" />
+                    <label class="upload-btn" for="misc1-img">Upload Photo</label>
+                    <input type="file" id="misc1-img" class="hidden">
+                </div>
+            </div>
+            <div class="pose-image">
+                <div class="pose-image">
+                    <h6>&nbsp;</h6>
+                    <div class="pose-image-container misc-container">
+                        <p>Miscellaneous</p>
+                        <p>(Optional)</p>
+                    </div>
+                    <img src="" />
+                    <label class="upload-btn" for="misc2-img">Upload Photo</label>
+                    <input type="file" id="misc2-img" class="hidden">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info-section">
+        <h3>Contact Details</h3>
+        <div>
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Telephone">
+            <input type="text" placeholder="Birthdate" onfocus="(this.type='date')" onblur="(this.type='text')">
+            <input type="text" placeholder="Zip code">
+        </div>
+    </section>
+
+    <section class="social-media-section">
+        <h3>Social Media ( Optional )</h3>
+        <div>
+            <img src="./images/instagram-logo.svg" class="instagram-logo">
+            <input type=" text" placeholder="Instagram">
+            <input type="text" placeholder="# Followers">
+        </div>
+        <button class="submit-application-btn">Submit Application</button>
+    </section>
+
+    <footer>
+        <img src="./images/upstate-logo-black.svg" class="upstate-logo" alt="Logo" />
+        <div>
+            <li>2022 Upstate Modeling</li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
