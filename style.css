@@ -52,8 +52,8 @@ input {
 /* Header styles */
 
 header {
-    height: 100%;
-    background: url("./images/hero-image.png") no-repeat top;
+    height: 80%;
+    background: url("/images/hero-image.png") no-repeat center;
     background-size: cover;
     display: flex;
     justify-content: space-between;
@@ -105,9 +105,7 @@ header nav a:first-child {
 @media screen and (max-width: 760px) {
 
     header {
-        /* padding-top: 20px; */
-        padding: 20px 20px;
-        /* position: relative; */
+        padding: 10px 20px;
     }
 
     .upstate-logo {
@@ -265,6 +263,10 @@ header nav a:first-child {
         font-size: 16px;
         line-height: 23px;
     }
+
+    .apply-section .note ul li {
+        padding: 12px 0px;
+    }
 }
 
 /* Contact Info Section */
@@ -354,7 +356,7 @@ header nav a:first-child {
     background: #fff;
     font-weight: 700;
     font-size: 22px;
-    width: 290px;
+    max-width: 290px;
     display: block;
     margin: auto;
     margin-top: 60px;
@@ -378,6 +380,42 @@ header nav a:first-child {
     .social-media-section div input:nth-child(3) {
         width: 50%;
     }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .social-media-section h3, .contact-info-section h3 {
+        font-size: 24px;
+    }
+
+    
+    .social-media-section div {
+        column-gap: 5px;
+        padding: 0px 10px;
+    }
+
+    .social-media-section div .instagram-logo {
+        height: 24px;
+        width: 24px;
+        margin: auto;
+    }
+
+    .social-media-section div input:nth-child(2) {
+        width: 45%;
+    }
+
+    .social-media-section div input:nth-child(3) {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 385px) {
+
+    .social-media-section h3, .contact-info-section h3 {
+        font-size: 22px;
+    }
+
 }
 
 footer {
