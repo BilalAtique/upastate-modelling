@@ -404,7 +404,7 @@ header nav a:first-child {
     }
 
     .social-media-section div input:nth-child(3) {
-        padding-left: 0;
+        padding-left: 5px;
     }
 }
 
