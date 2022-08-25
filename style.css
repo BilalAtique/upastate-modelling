@@ -391,22 +391,20 @@ header nav a:first-child {
 
     
     .social-media-section div {
-        column-gap: 5px;
-        padding: 0px 10px;
+        column-gap: 0px;
+        padding: 0;
+        padding-left: 5px;
     }
 
     .social-media-section div .instagram-logo {
         height: 24px;
         width: 24px;
         margin: auto;
-    }
-
-    .social-media-section div input:nth-child(2) {
-        width: 45%;
+        margin-right: 10px;
     }
 
     .social-media-section div input:nth-child(3) {
-        width: 55%;
+        padding-left: 0;
     }
 }
 
