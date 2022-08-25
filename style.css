@@ -399,12 +399,13 @@ header nav a:first-child {
     .social-media-section div .instagram-logo {
         height: 24px;
         width: 24px;
-        margin: auto;
+        margin-left: 10px;
         margin-right: 10px;
     }
 
     .social-media-section div input:nth-child(3) {
         padding-left: 5px;
+        font-size: 12px;
     }
 }
 
