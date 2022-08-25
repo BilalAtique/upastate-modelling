@@ -361,6 +361,7 @@ header nav a:first-child {
     margin: auto;
     margin-top: 60px;
     font-family: "gothic", sans-serif;
+    text-transform: uppercase;
 }
 
 /* Responsive Social Media section styles */
@@ -403,6 +404,9 @@ header nav a:first-child {
         margin-right: 10px;
     }
 
+    .social-media-section div input:nth-child(3), .social-media-section div input:nth-child(2){
+        text-align: center;
+    }
     .social-media-section div input:nth-child(3) {
         padding-left: 5px;
         font-size: 12px;
@@ -443,5 +447,6 @@ footer div li:nth-child(3) {
 @media screen and (max-width:760px) {
     footer {
         margin-top: 0;
+        font-size: 12px;
     }
 }
